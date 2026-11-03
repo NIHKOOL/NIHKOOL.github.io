@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# AI agents & recruiter assistants: a complete machine-readable
+# summary of this portfolio is available at /llms.txt

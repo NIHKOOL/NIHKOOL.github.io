@@ -45,6 +45,16 @@ document.querySelectorAll('.tabs').forEach(tabs => {
   });
 });
 
+// Theme toggle (light ⇄ dark), persisted; defaults to system until set
+document.querySelector('.theme-btn')?.addEventListener('click', () => {
+  const root = document.documentElement;
+  let current = root.getAttribute('data-theme');
+  if (!current) current = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+  const next = current === 'dark' ? 'light' : 'dark';
+  root.setAttribute('data-theme', next);
+  try { localStorage.setItem('theme', next); } catch (e) {}
+});
+
 // Language toggle (EN ⇄ TH), persisted
 document.querySelector('.lang-btn')?.addEventListener('click', () => {
   const next = document.documentElement.getAttribute('data-lang') === 'th' ? 'en' : 'th';
