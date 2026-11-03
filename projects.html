@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projects — Wattikon Nongnamkhao</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+Thai:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="container nav-inner">
+      <a href="index.html" class="logo">NIHKOOL<span>.</span></a>
+      <button class="menu-btn" aria-label="Menu"><span></span><span></span><span></span></button>
+      <ul class="nav-links">
+        <li><a href="index.html">Resume</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="certificates.html">Certificates</a></li>
+        <li><a href="activities.html">Activities</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="container">
+
+    <header class="page-head">
+      <h1>Projects</h1>
+      <p>Things I've built — from AI automation and security tools to games and UX/UI design.</p>
+    </header>
+
+    <div class="tabs">
+      <button class="active" data-filter="all">All</button>
+      <button data-filter="featured">Featured</button>
+      <button data-filter="side">Side Projects</button>
+    </div>
+
+    <section data-group="featured">
+      <h2 class="section-title">Featured Projects</h2>
+      <div class="grid two">
+
+        <article class="card reveal" id="korjong">
+          <div class="icon">🤖</div>
+          <div class="card-top">
+            <h3>Korjong AI</h3>
+            <span class="date">Jun – Aug 2026</span>
+          </div>
+          <p class="meta">AI Chatbot Backend Developer</p>
+          <ul>
+            <li>Omni-channel pipeline via n8n ingesting LINE, Facebook and Instagram messages.</li>
+            <li>AI intent classification routing between automated booking and customer support.</li>
+            <li>Event-driven reminders, late-arrival alerts and an AI assistant for business owners.</li>
+            <li>Backend APIs for merchant dashboard: messaging, calendar, CRM, analytics.</li>
+          </ul>
+          <div class="tags"><span class="tag">n8n</span><span class="tag">AI</span><span class="tag">Backend API</span><span class="tag">Automation</span></div>
+          <div class="links"><a href="https://korjong.com" target="_blank">🔗 korjong.com</a></div>
+        </article>
+
+        <article class="card reveal" id="sentinela">
+          <div class="icon">🛡️</div>
+          <div class="card-top">
+            <h3>Sentinela SOC Simulator</h3>
+            <span class="date">Oct 2026</span>
+          </div>
+          <p class="meta">Lightweight SIEM</p>
+          <ul>
+            <li>Collects Windows Event logs (4688, 4624, 4625, 4720) across hosts with a custom Python agent and simulated threats.</li>
+            <li>10 MITRE ATT&amp;CK-mapped Sigma rules with brute-force correlation — cut 35 false positives/hr with no missed true positives.</li>
+            <li>Analyst triage with entity pivoting and ±10-min timelines, API-key auth, 225 automated tests.</li>
+          </ul>
+          <div class="tags"><span class="tag">Python</span><span class="tag">FastAPI</span><span class="tag">SQLite</span><span class="tag">MITRE ATT&amp;CK</span><span class="tag">Sigma</span></div>
+          <!-- TODO: replace with the Sentinela repo URL -->
+          <div class="links"><a href="https://github.com/NIHKOOL" target="_blank">🔗 GitHub</a></div>
+        </article>
+
+        <article class="card reveal" id="jolepopo">
+          <div class="icon">⚔️</div>
+          <div class="card-top">
+            <h3>Jolepopo 2D Action Game</h3>
+            <span class="date">Apr – May 2025</span>
+          </div>
+          <p class="meta">Team project with ppararet · Programming Methodology</p>
+          <ul>
+            <li>JavaFX side-scroller with 3-character switching, 4 enemy AI types and a multi-phase boss across 5 maps.</li>
+            <li>Strict OOP design (interfaces, abstract classes, UML), custom 60 FPS loop, AABB collision and physics.</li>
+            <li>Scene navigation, upgrade tree, audio and debug overlays; shipped as an executable JAR.</li>
+          </ul>
+          <div class="tags"><span class="tag">Java</span><span class="tag">JavaFX</span><span class="tag">OOP</span><span class="tag">UML</span></div>
+          <div class="links">
+            <a href="https://github.com/NIHKOOL/Jolepopo" target="_blank">🔗 Code</a>
+            <a href="https://youtu.be/oEIywyK6eEs?si=qFvQbNVaqXDaj-V-" target="_blank">▶ Presentation</a>
+          </div>
+        </article>
+
+        <article class="card reveal" id="socket">
+          <div class="icon">🔌</div>
+          <div class="card-top">
+            <h3>Socket Programming</h3>
+            <span class="date"><!-- TODO: date --></span>
+          </div>
+          <p class="meta">Computer Networks</p>
+          <!-- TODO: add project description -->
+          <p>Network application built with socket programming.</p>
+          <div class="tags"><span class="tag">Networking</span><span class="tag">Sockets</span></div>
+          <div class="links"><a href="https://github.com/NIHKOOL" target="_blank">🔗 GitHub</a></div>
+        </article>
+
+      </div>
+    </section>
+
+    <section data-group="side">
+      <h2 class="section-title">Side Projects</h2>
+      <div class="grid">
+
+        <article class="card reveal" id="nice-knight">
+          <div class="icon">🗡️</div>
+          <h3>NICE-KNIGHT</h3>
+          <p class="meta">Mini 2D Python Game</p>
+          <p>Action game with a controllable character and score system, built with pygame.</p>
+          <div class="tags"><span class="tag">Python</span><span class="tag">pygame</span></div>
+          <div class="links"><a href="https://github.com/NIHKOOL/NICE-KNIGHT" target="_blank">🔗 Code</a></div>
+        </article>
+
+        <article class="card reveal" id="datedeck">
+          <div class="icon">💡</div>
+          <h3>DateDeck</h3>
+          <p class="meta">Thinc. 10 Days Project · UX/UI</p>
+          <p>A card-based dating app concept that predicts your destiny using mathematical solutions.</p>
+          <div class="tags"><span class="tag">UX/UI</span><span class="tag">Figma</span></div>
+          <div class="links">
+            <a href="https://www.figma.com/design/FRunFDWanLf1aC9BhrR9Vx/10_DAY_PG?node-id=0-1&amp;t=6bzCYbvGDAJPEslu-1" target="_blank">🔗 Figma</a>
+            <a href="https://www.canva.com/design/DAGh5MFsft0/31cRJCzz3CAbhAzJuCZLPA/view?utm_content=DAGh5MFsft0&amp;utm_campaign=designshare&amp;utm_medium=link2&amp;utm_source=uniquelinks&amp;utlId=h1750d7910d" target="_blank">▶ Presentation</a>
+          </div>
+        </article>
+
+        <article class="card reveal" id="sekicraft">
+          <div class="icon">🧱</div>
+          <h3>SekiCraft</h3>
+          <!-- TODO: add description, tech and links -->
+          <p>Details coming soon.</p>
+          <div class="tags"><span class="tag">Game</span></div>
+        </article>
+
+        <article class="card reveal" id="cu-ways">
+          <div class="icon">🗺️</div>
+          <h3>CU Ways</h3>
+          <p class="meta">UX/UI · Frontend · Backend</p>
+          <!-- TODO: add description and links -->
+          <p>Details coming soon.</p>
+          <div class="tags"><span class="tag">UX/UI</span><span class="tag">Frontend</span><span class="tag">Backend</span></div>
+        </article>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span>© <span class="year"></span> Wattikon Nongnamkhao</span>
+      <div class="social">
+        <a href="https://github.com/NIHKOOL" target="_blank">GitHub</a>
+        <a href="https://linkedin.com/in/wattikon-nongnamkhao" target="_blank">LinkedIn</a>
+        <a href="https://instagram.com/lo.hin.ok" target="_blank">Instagram</a>
+        <a href="https://www.tiktok.com/@nihkool4" target="_blank">TikTok</a>
+        <a href="mailto:wattikorn.nongnamkhao@gmail.com">Email</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

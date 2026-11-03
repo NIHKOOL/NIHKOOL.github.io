@@ -3,79 +3,151 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Portfolio</title>
+  <title>Wattikon Nongnamkhao — Portfolio</title>
+  <meta name="description" content="Wattikon Nongnamkhao — Computer Engineering student at Chulalongkorn University. Backend, AI automation and cybersecurity.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+Thai:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <header>
-    <h1>Wattikon Nongnamkhao</h1>
-    <p>Computer Engineering Student</p>
-  </header>
+  <nav class="nav">
+    <div class="container nav-inner">
+      <a href="index.html" class="logo">NIHKOOL<span>.</span></a>
+      <button class="menu-btn" aria-label="Menu"><span></span><span></span><span></span></button>
+      <ul class="nav-links">
+        <li><a href="index.html">Resume</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="certificates.html">Certificates</a></li>
+        <li><a href="activities.html">Activities</a></li>
+      </ul>
+    </div>
+  </nav>
 
-  <div class="container">
+  <main class="container">
+
+    <header class="hero">
+      <img src="me.png" alt="Wattikon Nongnamkhao" class="hero-photo">
+      <div>
+        <span class="eyebrow">Computer Engineering @ Chulalongkorn</span>
+        <h1>Wattikon Nongnamkhao</h1>
+        <p class="lead">Hi, I'm Lookhin. I build backend systems, AI automation and security tools — and play music when I'm not coding.</p>
+        <div class="hero-actions">
+          <a href="projects.html" class="btn primary">View Projects</a>
+          <a href="Wattikon%20Nongnamkhao%20-%20Resume.pdf" class="btn" target="_blank">Download Resume</a>
+        </div>
+      </div>
+    </header>
+
+    <div class="stats reveal">
+      <a href="projects.html" class="stat"><b>8</b><span>Projects</span></a>
+      <a href="certificates.html" class="stat"><b>7</b><span>Certificates</span></a>
+      <a href="certificates.html#awards" class="stat"><b>2</b><span>Awards</span></a>
+      <a href="activities.html" class="stat"><b>9</b><span>Activities</span></a>
+    </div>
+
     <section>
-      <h2 class="section-title"> About me </h2>
-        <div class="project">
-        <h3>Hello my name is Lookhin</h3>
-          <img src="me.png" alt="โลโก้" width="150">
-        <p> The 20 years old boy that have a dream to conquer One piece and become the pirate king.</p>
-
+      <h2 class="section-title">Education</h2>
+      <div class="card reveal">
+        <div class="row">
+          <h3>Chulalongkorn University</h3>
+          <span class="date">Aug 2024 – May 2028</span>
+        </div>
+        <p>Bachelor of Engineering in Computer Engineering · Bangkok, Thailand</p>
+      </div>
     </section>
 
     <section>
-      <h2 class="section-title"> Projects </h2>
-
-        <div class="project">
-        <h3>⚔️ NICE-KNIGHT - Mini 2D Python Game</h3>
-        <p>Action game with controlable character, score system - pygame (Better version in branch master). </p>
-        <p><a href="https://github.com/NIHKOOL/NICE-KNIGHT" target="_blank">🔗 Codes</a></p>
+      <h2 class="section-title">Experience</h2>
+      <div class="card reveal">
+        <div class="row">
+          <h3>AI Chatbot Backend Developer</h3>
+          <span class="date">Jun 2026 – Aug 2026</span>
+        </div>
+        <p class="meta">Korjong AI · <a href="https://korjong.com" target="_blank" class="link-arrow">korjong.com</a></p>
+        <ul>
+          <li>Architected an omni-channel automation pipeline via n8n to ingest messages across LINE, Facebook and Instagram.</li>
+          <li>Integrated AI models to classify customer intent, routing requests between automated booking and customer support.</li>
+          <li>Built event-driven services: customer registration, appointment reminders, late-arrival alerts and an AI assistant for business owners.</li>
+          <li>Engineered backend APIs for the merchant dashboard — omnichannel messaging, real-time calendar, CRM and analytics.</li>
+        </ul>
+        <div class="tags">
+          <span class="tag">n8n</span><span class="tag">AI / LLM</span><span class="tag">Backend API</span><span class="tag">Automation</span>
+        </div>
       </div>
-
-        <div class="project">
-        <h3>💡 DateDeck - Thinc 10 days project - UX/UI position</h3>
-        <p>Design a card-based dating app that predicts your destiny using mathematical solutions. </p>
-        <p><a href="https://www.figma.com/design/FRunFDWanLf1aC9BhrR9Vx/10_DAY_PG?node-id=0-1&t=6bzCYbvGDAJPEslu-1" target="_blank">🔗 UX/UI</a></p>
-        <p><a href="https://www.canva.com/design/DAGh5MFsft0/31cRJCzz3CAbhAzJuCZLPA/view?utm_content=DAGh5MFsft0&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h1750d7910d" target="_blank">🔗 Presentation</a></p>
-      </div>
-      
-      <div class="project">
-        <h3>🐱‍👤 Jolepopo (NIHKOOL and ppararet) - A team project for the Programming Methodology class </h3>
-        <p>2D action platformer game written in Java using JavaFX. You play as a samurai character with different abilities like attacking, defending, and switching between multiple classes in real time. </p>
-        <p>Wattikon 67********  <br> Suwira 67****** </p>
-
-        <p><a href="https://github.com/NIHKOOL/Jolepopo" target="_blank">🔗 Codes</a></p>
-        <p><a href="https://youtu.be/oEIywyK6eEs?si=qFvQbNVaqXDaj-V-" target="_blank">🔗 Presentation</a></p>
-      </div>
+    </section>
 
     <section>
-      <h2 class="section-title"> Skills </h2>
-        <div class="project">
-        <h3> Advance </h3>
-          <p> 🐍 Python , Automational breathe in and breathe out, Fly 0.3 seconds per time, See nothing on the back</p>
-        <h3> Intermediate </h3>
-          <p> ♨️ Java , Guitar, Drum, Sing, Beat Sekiro, Swensen's Lover</p>
-        <h3> Beginner </h3>
-          <p> Sleep </p>
+      <h2 class="section-title">Featured Projects</h2>
+      <div class="grid">
+        <a href="projects.html#sentinela" class="card reveal">
+          <div class="icon">🛡️</div>
+          <h3>Sentinela SOC Simulator</h3>
+          <p>Lightweight SIEM with MITRE ATT&amp;CK-mapped Sigma rules and analyst triage.</p>
+          <div class="tags"><span class="tag">Python</span><span class="tag">FastAPI</span><span class="tag">SQLite</span></div>
+        </a>
+        <a href="projects.html#korjong" class="card reveal">
+          <div class="icon">🤖</div>
+          <h3>Korjong AI</h3>
+          <p>Omni-channel AI chatbot and booking automation for businesses.</p>
+          <div class="tags"><span class="tag">n8n</span><span class="tag">AI</span><span class="tag">Backend</span></div>
+        </a>
+        <a href="projects.html#jolepopo" class="card reveal">
+          <div class="icon">⚔️</div>
+          <h3>Jolepopo 2D Action Game</h3>
+          <p>JavaFX side-scroller with character switching, enemy AI and a boss fight.</p>
+          <div class="tags"><span class="tag">Java</span><span class="tag">JavaFX</span><span class="tag">OOP</span></div>
+        </a>
+      </div>
+      <div class="section-foot"><a href="projects.html" class="link-arrow">See all projects</a></div>
     </section>
 
-     <section>
-      <h2 class="section-title"> Activities </h2>
-
-      
+    <section>
+      <h2 class="section-title">Technical Skills</h2>
+      <div class="card skills reveal">
+        <div class="skill-group">
+          <h4>Languages</h4>
+          <div class="tags">
+            <span class="tag">Python</span><span class="tag">C/C++</span><span class="tag">Java</span><span class="tag">Go</span><span class="tag">JavaScript</span><span class="tag">SQL (PostgreSQL)</span><span class="tag">NoSQL (MongoDB)</span><span class="tag">HTML/CSS</span><span class="tag">YARA</span><span class="tag">Sigma</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h4>Frameworks &amp; Libraries</h4>
+          <div class="tags">
+            <span class="tag">FastAPI</span><span class="tag">Node.js</span><span class="tag">Next.js</span><span class="tag">JavaFX</span><span class="tag">Loki Scanner</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h4>Developer Tools</h4>
+          <div class="tags">
+            <span class="tag">Git</span><span class="tag">GitHub Actions</span><span class="tag">Docker</span><span class="tag">Linux</span><span class="tag">Wireshark</span><span class="tag">VS Code</span><span class="tag">Supabase</span><span class="tag">n8n</span><span class="tag">Claude CLI</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h4>Concepts</h4>
+          <div class="tags">
+            <span class="tag">Database Systems</span><span class="tag">Operating Systems</span><span class="tag">Computer Networks</span><span class="tag">Software Engineering</span><span class="tag">Quantum Computing</span>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section class="contact">
-      <h2 class="section-title">Contact</h2>
-      <p></p>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span>© <span class="year"></span> Wattikon Nongnamkhao</span>
       <div class="social">
-        <a href="https://github.com/NIHKOOL" target="_blank">GitHub</a> 
+        <a href="https://github.com/NIHKOOL" target="_blank">GitHub</a>
+        <a href="https://linkedin.com/in/wattikon-nongnamkhao" target="_blank">LinkedIn</a>
         <a href="https://instagram.com/lo.hin.ok" target="_blank">Instagram</a>
-        <a href="https://www.tiktok.com/@nihkool4" target="_blank"> Tiktok</a>
-        <a href="https://mail.google.com/mail/u/0/?fs=1&to=wattikorn.nongnamkhao@gmail.com&tf=cm" target="_blank"> Email</a>
+        <a href="https://www.tiktok.com/@nihkool4" target="_blank">TikTok</a>
+        <a href="mailto:wattikorn.nongnamkhao@gmail.com">Email</a>
       </div>
-    </section>
-  </div>
+    </div>
+  </footer>
 
+  <script src="main.js"></script>
 </body>
 </html>
