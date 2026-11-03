@@ -1,0 +1,121 @@
+%==============================================================
+%  Wattikon Nongnamkhao - Portfolio
+%  Compiles with pdfLaTeX (also works on Overleaf out of the box)
+%==============================================================
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=0.7in]{geometry}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{xcolor}
+\usepackage[hidelinks]{hyperref}
+\usepackage[normalem]{ulem}
+
+\hypersetup{colorlinks=true,urlcolor=black,linkcolor=black,citecolor=black}
+% Underline all hyperlinks (keeps them black, allows line breaks)
+\let\oldhref\href
+\renewcommand{\href}[2]{\oldhref{#1}{\uline{#2}}}
+
+% --- Section styling ---
+\titleformat{\section}{\large\bfseries}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{10pt}{6pt}
+\setlist[itemize]{leftmargin=1.3em,itemsep=1pt,topsep=2pt}
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+
+% --- Helpers ---
+\newcommand{\entry}[2]{\textbf{#1}\hfill\textit{#2}\\}
+\newcommand{\role}[2]{\textit{#1}\hfill\textit{#2}\\}
+
+\begin{document}
+
+%--------------------- Header ---------------------
+\begin{center}
+  {\huge\bfseries Wattikon Nongnamkhao}\\[4pt]
+  {\large Computer Engineering Student}\\[6pt]
+  \href{mailto:wattikorn.nongnamkhao@gmail.com}{wattikorn.nongnamkhao@gmail.com} $\mid$ 063-216-0608 $\mid$
+  \href{https://github.com/NIHKOOL}{github.com/NIHKOOL} $\mid$
+  \href{https://linkedin.com/in/wattikon-nongnamkhao}{linkedin.com/in/wattikon-nongnamkhao}
+\end{center}
+
+%--------------------- Education ---------------------
+\section{Education}
+\entry{Chulalongkorn University}{Aug 2024 -- May 2028}
+Bachelor of Engineering in Computer Engineering \textperiodcentered{} Bangkok, Thailand
+
+%--------------------- Experience ---------------------
+\section{Experience}
+\entry{AI Chatbot Backend Developer, Korjong AI}{Jun 2026 -- Aug 2026}
+\href{https://korjong.com}{korjong.com}
+\begin{itemize}
+  \item Architected an omni-channel automation pipeline via n8n to ingest messages across LINE, Facebook and Instagram.
+  \item Integrated AI models to classify customer intent, routing requests between automated booking and customer support.
+  \item Built event-driven services: customer registration, appointment reminders, late-arrival alerts, and an AI assistant for business owners.
+  \item Engineered backend APIs for the merchant dashboard --- omnichannel messaging, real-time calendar, CRM and analytics.
+\end{itemize}
+
+%--------------------- Projects ---------------------
+\section{Projects}
+\textbf{Featured}
+\begin{itemize}
+  \item \textbf{Korjong AI} \textit{(Jun--Aug 2026)} --- Omni-channel AI chatbot and booking automation for businesses. \textit{n8n, AI, Backend API, Automation.} \href{https://korjong.com}{korjong.com}
+  \item \textbf{Sentinela SOC Simulator} \textit{(Oct 2026)} --- Lightweight SIEM collecting Windows Event logs across hosts via a custom Python agent; 10 MITRE ATT\&CK-mapped Sigma rules with brute-force correlation (cut 35 false positives/hr with no missed true positives); analyst triage with entity pivoting and $\pm$10-min timelines, API-key auth, 225 automated tests. \textit{Python, FastAPI, SQLite, MITRE ATT\&CK, Sigma.} \href{https://github.com/NIHKOOL/Sentinela}{Code}
+  \item \textbf{Jolepopo 2D Action Game} \textit{(Apr--May 2025, course 2110215)} --- JavaFX side-scroller with 3-character switching, 4 enemy AI types and a multi-phase boss across 5 maps; strict OOP (interfaces, abstract classes, UML), custom 60 FPS loop, AABB collision and physics; shipped as an executable JAR. Team with ppararet. \textit{Java, JavaFX, OOP, UML.} \href{https://github.com/NIHKOOL/Jolepopo}{Code} $\mid$ \href{https://youtu.be/oEIywyK6eEs}{Video}
+  \item \textbf{Socket Programming} \textit{(Nov 2026, course 2110471)} --- Real-time client--server chat app with private and group messaging over WebSocket (TCP); Node.js + Socket.IO server with a React/Vite client; automated tests per requirement; extras: AI chatbot, Discord bridge, file sharing, in-chat mini-games. \textit{Node.js, Socket.IO, React, WebSocket.} \href{https://github.com/NIHKOOL/Socket-Programming-Project}{Code}
+\end{itemize}
+
+\textbf{Side projects}
+\begin{itemize}
+  \item \textbf{NICE-KNIGHT} \textit{(Dec 2024)} --- Mini 2D Python game with a controllable character and score system. \textit{Python, pygame.} \href{https://github.com/NIHKOOL/NICE-KNIGHT}{Code}
+  \item \textbf{DateDeck} \textit{(Mar 2025)} --- Thinc. 10 Days Project (UX/UI): a card-based dating app concept that predicts destiny using mathematical solutions. \textit{UX/UI, Figma.} \href{https://www.figma.com/design/FRunFDWanLf1aC9BhrR9Vx/10_DAY_PG}{Figma} $\mid$ \href{https://www.canva.com/design/DAGh5MFsft0/31cRJCzz3CAbhAzJuCZLPA/view}{Presentation}
+  \item \textbf{SekiCraft} \textit{(Oct 2026)} --- Experimental mod to play \textit{Sekiro: Shadows Die Twice} as a Minecraft player; a C++ DLL and a Fabric mod bridge both games through shared memory. \textit{C++, Java, Fabric Mod.} \href{https://github.com/NIHKOOL/SekiCraft}{Code}
+  \item \textbf{CU Ways} \textit{(Aug--Nov 2026)} --- Marketplace platform connecting content creators with marketers for survey-based jobs: survey/job management, marketer discovery, offer comparison and hiring. UX/UI, frontend and backend. \textit{Next.js, TypeScript, Go, PostgreSQL.} \href{https://www.figma.com/design/XMwuViKKwBvZFBqsVP6PAx/SE-UX-UI}{Figma} $\mid$ \href{https://github.com/Champy2005/cu-ways-frontend}{Frontend} $\mid$ \href{https://github.com/Aluminium51/cu-ways-backend}{Backend}
+\end{itemize}
+
+%--------------------- Certifications ---------------------
+\section{Certifications}
+\textbf{Google Cybersecurity Professional Certificate} \textit{(Google, Jun--Oct 2026)}
+\begin{itemize}
+  \item \href{https://coursera.org/share/b0f2c74e9855b8b517aa0073db831c4a}{Foundations of Cybersecurity}
+  \item \href{https://coursera.org/share/d76fb8febca841139ed27602e77db71c}{Play It Safe: Manage Security Risks}
+  \item \href{https://coursera.org/share/6ecd4fd75d075eecc37a9bd0199171f2}{Connect and Protect: Networks and Network Security}
+  \item \href{https://coursera.org/share/aa1f1ea9846e08487e8c758c2370e6b5}{Tools of the Trade: Linux and SQL}
+\end{itemize}
+\textbf{SOI Asia Online Course Certification} \textit{(SOI Asia, Apr--May 2026)}
+\begin{itemize}
+  \item \href{https://inxignia.soi.asia/public/assertions/2VMt742kQke1HmAH4-fbhQ}{Understanding the Internet}
+  \item \href{https://inxignia.soi.asia/public/assertions/AUzKTp_TQI66ztAQiz-1eg}{Operating the Internet}
+  \item \href{https://inxignia.soi.asia/public/assertions/TGMEbmWSQEC67p5CBaKkMg}{OSPF Workshop}
+\end{itemize}
+
+%--------------------- Awards ---------------------
+\section{Awards}
+\begin{itemize}
+  \item \textbf{1st Place + Popular Vote} --- Exploring Engineering World (course 2100111), Nov 2024. Course project; Student Ranking 5/417. \textit{Figma.} \href{https://youtu.be/MJtl5JIUM9o}{Video}
+  \item \textbf{Aihack Thailand 2025} --- AIRA \& AIFUL Public Company Limited, Dec 2025. Top 16 Finalist Team Certificate, LOD Prediction AI Hackathon. \textit{Python, Pandas, XGBoost, LightGBM, CatBoost.} \href{https://drive.google.com/file/d/1unlrGHaMatQl26h353zUoxBGKAdH9IrM/view}{Certificate}
+\end{itemize}
+
+%--------------------- Activities ---------------------
+\section{Leadership \& Activities}
+\begin{itemize}
+  \item \textbf{CU Chorus Concert 2026} \textit{(Jul 2026)} --- Ticketing Staff: distributed concert admission tickets.
+  \item \textbf{VidLoveVidU} \textit{(Feb 2026)} --- Band Leader \& Vocalist: recruited members, coordinated rehearsals/venues, sang lead while playing percussion.
+  \item \textbf{Show COMSAMPAN 2025} \textit{(Dec 2025)} --- Percussionist: coordinated rehearsals and performed caj\'on.
+  \item \textbf{Modchomphu Hackathon} \textit{(Oct--Nov 2025)} --- Welfare \& PR: ran welfare logistics and produced end-to-end promo clips (scripting, filming, editing) with the KMUTT Faculty of Engineering Student Union.
+  \item \textbf{AIS Siam Co Play Night} \textit{(Oct 2025)} --- Content Creator: produced a review/promo clip for the World Cup viewing venue.
+  \item \textbf{Hello CP52} \textit{(Jul 2025)} --- Registration Team: built the registration form, verified the attendee list, coordinated data with other teams.
+  \item \textbf{Rubpuen Baanjaew} \textit{(Jun--Jul 2025)} --- Welfare Team: prepared the distribution area and handed out water, food and sponsor goods.
+  \item \textbf{Intania Vishnu 23rd} \textit{(May--Jul 2025)} --- Inner Welfare Team: ran welfare logistics for 1,500+ attendees, handled on-the-spot problems.
+  \item \textbf{Intania Music Club 108 Contest} \textit{(Mar 2025)} --- Vocalist \& Rhythm Guitarist: recruited members, coordinated rehearsals/venues, sang lead while playing guitar.
+\end{itemize}
+
+%--------------------- Skills ---------------------
+\section{Technical Skills}
+\textbf{Languages:} Python, C/C++, Java, Go, JavaScript, SQL (PostgreSQL), NoSQL (MongoDB), HTML/CSS, YARA, Sigma\\
+\textbf{Frameworks \& Libraries:} FastAPI, Node.js, Next.js, JavaFX, Loki Scanner\\
+\textbf{Developer Tools:} Git, GitHub Actions, Docker, Linux, Wireshark, VS Code, Supabase, n8n, Claude CLI\\
+\textbf{Concepts:} Database Systems, Operating Systems, Computer Networks, Software Engineering, Quantum Computing
+
+\end{document}
