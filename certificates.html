@@ -1,48 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Certificates &amp; Awards — Wattikon Nongnamkhao</title>
+  <title>Certificates &amp; Awards - Wattikon Nongnamkhao</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+Thai:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <script>try{document.documentElement.setAttribute('data-lang',localStorage.getItem('lang')||'en');document.documentElement.lang=localStorage.getItem('lang')||'en';}catch(e){}</script>
 </head>
 <body>
 
   <nav class="nav">
     <div class="container nav-inner">
       <a href="index.html" class="logo">NIHKOOL<span>.</span></a>
-      <button class="menu-btn" aria-label="Menu"><span></span><span></span><span></span></button>
-      <ul class="nav-links">
-        <li><a href="index.html">Resume</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="certificates.html">Certificates</a></li>
-        <li><a href="activities.html">Activities</a></li>
-      </ul>
+      <div class="nav-actions">
+        <ul class="nav-links">
+          <li><a href="index.html"><span class="lang-en">Resume</span><span class="lang-th">เรซูเม่</span></a></li>
+          <li><a href="projects.html"><span class="lang-en">Projects</span><span class="lang-th">ผลงาน</span></a></li>
+          <li><a href="certificates.html"><span class="lang-en">Certificates</span><span class="lang-th">ใบรับรอง</span></a></li>
+          <li><a href="activities.html"><span class="lang-en">Activities</span><span class="lang-th">กิจกรรม</span></a></li>
+        </ul>
+        <button class="lang-btn" aria-label="Switch language"><span class="lang-en">ไทย</span><span class="lang-th">EN</span></button>
+        <button class="menu-btn" aria-label="Menu"><span></span><span></span><span></span></button>
+      </div>
     </div>
   </nav>
 
   <main class="container">
 
     <header class="page-head">
-      <h1>Certificates &amp; Awards</h1>
-      <p>Courses I've completed and competitions I've placed in.</p>
+      <h1><span class="lang-en">Certificates &amp; Awards</span><span class="lang-th">ใบรับรองและรางวัล</span></h1>
+      <p>
+        <span class="lang-en">Courses I've completed and competitions I've placed in.</span>
+        <span class="lang-th">คอร์สที่ผมเรียนจบ และการแข่งขันที่ผมได้รางวัล</span>
+      </p>
+      <div class="counts">
+        <span class="count"><b>7</b> <span class="lang-en">Certificates</span><span class="lang-th">ใบรับรอง</span></span>
+        <span class="count"><b>2</b> <span class="lang-en">Awards</span><span class="lang-th">รางวัล</span></span>
+      </div>
     </header>
 
     <section id="awards">
-      <h2 class="section-title">Awards</h2>
+      <h2 class="section-title"><span class="lang-en">Awards</span><span class="lang-th">รางวัล</span></h2>
       <div class="grid two">
         <article class="card reveal">
           <div class="icon">🏆</div>
           <div class="card-top">
-            <h3>1st Place + Popular Vote</h3>
-            <span class="date"><!-- TODO: date --></span>
+            <h3><span class="lang-en">1st Place + Popular Vote</span><span class="lang-th">รางวัลชนะเลิศ + Popular Vote</span></h3>
+            <span class="date">Nov 2024</span>
           </div>
-          <p class="meta">Exploring Engineering World</p>
-          <p>UX/UI requirement challenge.</p>
-          <div class="tags"><span class="tag">UX/UI</span></div>
+          <p class="meta">Exploring Engineering World · 2100111</p>
+          <p>
+            <span class="lang-en">Course project - won 1st Place and the Popular Vote.</span>
+            <span class="lang-th">โปรเจกต์ประจำวิชา - ได้รางวัลชนะเลิศและ Popular Vote</span>
+          </p>
+          <div class="tags"><span class="tag">Student Ranking 5/417</span></div>
+          <div class="links"><a href="https://youtu.be/MJtl5JIUM9o" target="_blank">▶ <span class="lang-en">Watch</span><span class="lang-th">ดูวิดีโอ</span></a></div>
         </article>
         <article class="card reveal">
           <div class="icon">🤖</div>
@@ -51,57 +66,93 @@
             <span class="date">Dec 2025</span>
           </div>
           <p class="meta">AIRA &amp; AIFUL Public Company Limited</p>
-          <p>Top 16 Finalist Team Certificate — LOD Prediction AI Hackathon.</p>
+          <p><span class="lang-en">Top 16 Finalist Team Certificate - LOD Prediction AI Hackathon.</span><span class="lang-th">ใบรับรองทีมเข้ารอบ 16 ทีมสุดท้าย - LOD Prediction AI Hackathon</span></p>
           <div class="tags"><span class="tag">AI</span><span class="tag">Hackathon</span></div>
+          <div class="links"><a href="https://drive.google.com/file/d/1unlrGHaMatQl26h353zUoxBGKAdH9IrM/view?usp=sharing" target="_blank">🔗 <span class="lang-en">View certificate</span><span class="lang-th">ดูใบรับรอง</span></a></div>
         </article>
       </div>
     </section>
 
     <section>
       <h2 class="section-title">Google Cybersecurity Professional Certificate</h2>
-      <p class="group-meta">Google · Jun 2026 – Oct 2026</p>
+      <p class="group-meta">Google · Jun 2026 - Oct 2026</p>
       <div class="grid">
         <article class="card reveal">
           <div class="icon">🔐</div>
           <h3>Foundations of Cybersecurity</h3>
           <p class="meta">Google</p>
+          <p>
+            <span class="lang-en">Core security concepts, the eight CISSP security domains, and common threats, risks and vulnerabilities.</span>
+            <span class="lang-th">แนวคิดพื้นฐานด้านความปลอดภัย, โดเมนความปลอดภัย CISSP ทั้ง 8 ด้าน และภัยคุกคาม ความเสี่ยง และช่องโหว่ที่พบบ่อย</span>
+          </p>
+          <div class="links"><a href="https://coursera.org/share/b0f2c74e9855b8b517aa0073db831c4a" target="_blank">🔗 <span class="lang-en">View credential</span><span class="lang-th">ดูใบรับรอง</span></a></div>
         </article>
         <article class="card reveal">
           <div class="icon">⚠️</div>
           <h3>Play It Safe: Manage Security Risks</h3>
           <p class="meta">Google</p>
+          <p>
+            <span class="lang-en">Security frameworks and controls, the CIA triad, NIST frameworks, and an intro to SIEM tools.</span>
+            <span class="lang-th">เฟรมเวิร์กและมาตรการควบคุมความปลอดภัย, หลัก CIA, เฟรมเวิร์ก NIST และการใช้เครื่องมือ SIEM เบื้องต้น</span>
+          </p>
+          <div class="links"><a href="https://coursera.org/share/d76fb8febca841139ed27602e77db71c" target="_blank">🔗 <span class="lang-en">View credential</span><span class="lang-th">ดูใบรับรอง</span></a></div>
         </article>
         <article class="card reveal">
           <div class="icon">🌐</div>
           <h3>Connect and Protect: Networks and Network Security</h3>
           <p class="meta">Google</p>
+          <p>
+            <span class="lang-en">Network architecture and protocols, common network attacks, and security hardening.</span>
+            <span class="lang-th">สถาปัตยกรรมและโปรโตคอลเครือข่าย, การโจมตีเครือข่ายที่พบบ่อย และการเสริมความปลอดภัย</span>
+          </p>
+          <div class="links"><a href="https://coursera.org/share/6ecd4fd75d075eecc37a9bd0199171f2" target="_blank">🔗 <span class="lang-en">View credential</span><span class="lang-th">ดูใบรับรอง</span></a></div>
         </article>
         <article class="card reveal">
           <div class="icon">🐧</div>
           <h3>Tools of the Trade: Linux and SQL</h3>
           <p class="meta">Google</p>
+          <p>
+            <span class="lang-en">The Linux command line and shell operations, plus querying databases with SQL.</span>
+            <span class="lang-th">การใช้งาน Linux command line และเชลล์ รวมถึงการ query ฐานข้อมูลด้วย SQL</span>
+          </p>
+          <div class="links"><a href="https://coursera.org/share/aa1f1ea9846e08487e8c758c2370e6b5" target="_blank">🔗 <span class="lang-en">View credential</span><span class="lang-th">ดูใบรับรอง</span></a></div>
         </article>
       </div>
     </section>
 
     <section>
       <h2 class="section-title">SOI Asia Online Course Certification</h2>
-      <p class="group-meta">SOI Asia · Apr 2026 – May 2026</p>
+      <p class="group-meta">SOI Asia · Apr 2026 - May 2026</p>
       <div class="grid">
         <article class="card reveal">
           <div class="icon">📡</div>
           <h3>Understanding the Internet</h3>
           <p class="meta">SOI Asia</p>
+          <p>
+            <span class="lang-en">Internet fundamentals - how the Internet is structured and how data flows across it.</span>
+            <span class="lang-th">พื้นฐานอินเทอร์เน็ต - โครงสร้างของอินเทอร์เน็ตและการไหลของข้อมูล</span>
+          </p>
+          <div class="links"><a href="https://inxignia.soi.asia/public/assertions/2VMt742kQke1HmAH4-fbhQ" target="_blank">🔗 <span class="lang-en">View credential</span><span class="lang-th">ดูใบรับรอง</span></a></div>
         </article>
         <article class="card reveal">
           <div class="icon">🛠️</div>
           <h3>Operating the Internet</h3>
           <p class="meta">SOI Asia</p>
+          <p>
+            <span class="lang-en">Operating and managing Internet infrastructure and core network services.</span>
+            <span class="lang-th">การดำเนินงานและจัดการโครงสร้างพื้นฐานและบริการหลักของเครือข่ายอินเทอร์เน็ต</span>
+          </p>
+          <div class="links"><a href="https://inxignia.soi.asia/public/assertions/AUzKTp_TQI66ztAQiz-1eg" target="_blank">🔗 <span class="lang-en">View credential</span><span class="lang-th">ดูใบรับรอง</span></a></div>
         </article>
         <article class="card reveal">
           <div class="icon">🔀</div>
           <h3>OSPF Workshop</h3>
           <p class="meta">SOI Asia</p>
+          <p>
+            <span class="lang-en">Hands-on dynamic routing - configuring and troubleshooting OSPF.</span>
+            <span class="lang-th">เวิร์กช็อป dynamic routing - ตั้งค่าและแก้ปัญหา OSPF แบบลงมือทำจริง</span>
+          </p>
+          <div class="links"><a href="https://inxignia.soi.asia/public/assertions/TGMEbmWSQEC67p5CBaKkMg" target="_blank">🔗 <span class="lang-en">View credential</span><span class="lang-th">ดูใบรับรอง</span></a></div>
         </article>
       </div>
     </section>

@@ -47,6 +47,10 @@
 ::view-transition-old(root),
 ::view-transition-new(root) { animation-duration: .35s; }
 
+/* ---------- Language toggle ---------- */
+:root[data-lang="en"] .lang-th,
+:root[data-lang="th"] .lang-en { display: none !important; }
+
 /* ---------- Base ---------- */
 * { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -109,6 +113,30 @@ img { max-width: 100%; display: block; }
 
 .logo { font-weight: 700; letter-spacing: -.02em; }
 .logo span { color: var(--accent); }
+
+.nav-actions { display: flex; align-items: center; gap: 10px; }
+.lang-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font: inherit;
+  font-weight: 600;
+  font-size: .86rem;
+  color: var(--text);
+  background: var(--surface);
+  border: 1px solid var(--line);
+  padding: 7px 13px;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: color .2s, border-color .2s, transform .2s var(--ease), box-shadow .2s;
+}
+.lang-btn::before { content: "🌐"; font-size: .95em; }
+.lang-btn:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+  transform: translateY(-1px);
+  box-shadow: var(--shadow);
+}
 
 .nav-links { display: flex; gap: 4px; list-style: none; }
 .nav-links a {
@@ -219,6 +247,28 @@ img { max-width: 100%; display: block; }
 }
 .page-head p { color: var(--muted); margin-top: 8px; max-width: 600px; }
 
+.counts { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 20px; }
+.count {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 7px;
+  padding: 8px 16px;
+  color: var(--muted);
+  font-size: .92rem;
+  background: linear-gradient(180deg, var(--surface), var(--surface-2));
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  box-shadow: var(--shadow), inset 0 1px 0 var(--highlight);
+}
+.count b {
+  font-size: 1.2rem;
+  letter-spacing: -.02em;
+  background: linear-gradient(120deg, var(--accent), var(--accent-2));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
 /* ---------- Buttons ---------- */
 .btn {
   display: inline-flex;
@@ -247,11 +297,11 @@ img { max-width: 100%; display: block; }
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 12px;
-  margin-bottom: 24px;
+  margin: 8px 0 24px;
 }
 .stat {
   display: block;
-  padding: 20px;
+  padding: 22px;
   background: linear-gradient(180deg, var(--surface), var(--surface-2));
   border: 1px solid var(--line);
   border-radius: var(--radius);
@@ -265,8 +315,9 @@ img { max-width: 100%; display: block; }
 }
 .stat b {
   display: block;
-  font-size: 2rem;
+  font-size: 2.1rem;
   letter-spacing: -.03em;
+  line-height: 1.1;
   background: linear-gradient(120deg, var(--accent), var(--accent-2));
   -webkit-background-clip: text;
   background-clip: text;

@@ -1,58 +1,74 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Projects — Wattikon Nongnamkhao</title>
+  <title>Projects - Wattikon Nongnamkhao</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+Thai:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <script>try{document.documentElement.setAttribute('data-lang',localStorage.getItem('lang')||'en');document.documentElement.lang=localStorage.getItem('lang')||'en';}catch(e){}</script>
 </head>
 <body>
 
   <nav class="nav">
     <div class="container nav-inner">
       <a href="index.html" class="logo">NIHKOOL<span>.</span></a>
-      <button class="menu-btn" aria-label="Menu"><span></span><span></span><span></span></button>
-      <ul class="nav-links">
-        <li><a href="index.html">Resume</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="certificates.html">Certificates</a></li>
-        <li><a href="activities.html">Activities</a></li>
-      </ul>
+      <div class="nav-actions">
+        <ul class="nav-links">
+          <li><a href="index.html"><span class="lang-en">Resume</span><span class="lang-th">เรซูเม่</span></a></li>
+          <li><a href="projects.html"><span class="lang-en">Projects</span><span class="lang-th">ผลงาน</span></a></li>
+          <li><a href="certificates.html"><span class="lang-en">Certificates</span><span class="lang-th">ใบรับรอง</span></a></li>
+          <li><a href="activities.html"><span class="lang-en">Activities</span><span class="lang-th">กิจกรรม</span></a></li>
+        </ul>
+        <button class="lang-btn" aria-label="Switch language"><span class="lang-en">ไทย</span><span class="lang-th">EN</span></button>
+        <button class="menu-btn" aria-label="Menu"><span></span><span></span><span></span></button>
+      </div>
     </div>
   </nav>
 
   <main class="container">
 
     <header class="page-head">
-      <h1>Projects</h1>
-      <p>Things I've built — from AI automation and security tools to games and UX/UI design.</p>
+      <h1><span class="lang-en">Projects</span><span class="lang-th">ผลงาน</span></h1>
+      <p>
+        <span class="lang-en">Things I've built - from AI automation and security tools to games and UX/UI design.</span>
+        <span class="lang-th">สิ่งที่ผมสร้าง - ตั้งแต่ระบบ AI อัตโนมัติ เครื่องมือความปลอดภัย ไปจนถึงเกมและงานออกแบบ UX/UI</span>
+      </p>
+      <div class="counts">
+        <span class="count"><b>8</b> <span class="lang-en">Total</span><span class="lang-th">ทั้งหมด</span></span>
+        <span class="count"><b>4</b> <span class="lang-en">Featured</span><span class="lang-th">ผลงานเด่น</span></span>
+        <span class="count"><b>4</b> <span class="lang-en">Side projects</span><span class="lang-th">โปรเจกต์เสริม</span></span>
+      </div>
     </header>
 
     <div class="tabs">
-      <button class="active" data-filter="all">All</button>
-      <button data-filter="featured">Featured</button>
-      <button data-filter="side">Side Projects</button>
+      <button class="active" data-filter="all"><span class="lang-en">All</span><span class="lang-th">ทั้งหมด</span></button>
+      <button data-filter="featured"><span class="lang-en">Featured</span><span class="lang-th">เด่น</span></button>
+      <button data-filter="side"><span class="lang-en">Side Projects</span><span class="lang-th">เสริม</span></button>
     </div>
 
     <section data-group="featured">
-      <h2 class="section-title">Featured Projects</h2>
+      <h2 class="section-title"><span class="lang-en">Featured Projects</span><span class="lang-th">ผลงานเด่น</span></h2>
       <div class="grid two">
 
         <article class="card reveal" id="korjong">
           <div class="icon">🤖</div>
           <div class="card-top">
             <h3>Korjong AI</h3>
-            <span class="date">Jun – Aug 2026</span>
+            <span class="date">Jun - Aug 2026</span>
           </div>
-          <p class="meta">AI Chatbot Backend Developer</p>
+          <p class="meta"><span class="lang-en">AI Chatbot Backend Developer</span><span class="lang-th">นักพัฒนา Backend แชตบอต AI</span></p>
           <ul>
-            <li>Omni-channel pipeline via n8n ingesting LINE, Facebook and Instagram messages.</li>
-            <li>AI intent classification routing between automated booking and customer support.</li>
-            <li>Event-driven reminders, late-arrival alerts and an AI assistant for business owners.</li>
-            <li>Backend APIs for merchant dashboard: messaging, calendar, CRM, analytics.</li>
+            <li class="lang-en">Omni-channel pipeline via n8n ingesting LINE, Facebook and Instagram messages.</li>
+            <li class="lang-th">ระบบ omni-channel ด้วย n8n รับข้อความจาก LINE, Facebook และ Instagram</li>
+            <li class="lang-en">AI intent classification routing between automated booking and customer support.</li>
+            <li class="lang-th">จำแนกความต้องการด้วย AI ส่งต่อระหว่างระบบจองอัตโนมัติกับฝ่ายบริการลูกค้า</li>
+            <li class="lang-en">Event-driven reminders, late-arrival alerts and an AI assistant for business owners.</li>
+            <li class="lang-th">การแจ้งเตือนแบบ event-driven, แจ้งเตือนมาสาย และผู้ช่วย AI สำหรับเจ้าของธุรกิจ</li>
+            <li class="lang-en">Backend APIs for merchant dashboard: messaging, calendar, CRM, analytics.</li>
+            <li class="lang-th">Backend API สำหรับแดชบอร์ดร้านค้า: ข้อความ, ปฏิทิน, CRM, การวิเคราะห์</li>
           </ul>
           <div class="tags"><span class="tag">n8n</span><span class="tag">AI</span><span class="tag">Backend API</span><span class="tag">Automation</span></div>
           <div class="links"><a href="https://korjong.com" target="_blank">🔗 korjong.com</a></div>
@@ -64,33 +80,38 @@
             <h3>Sentinela SOC Simulator</h3>
             <span class="date">Oct 2026</span>
           </div>
-          <p class="meta">Lightweight SIEM</p>
+          <p class="meta"><span class="lang-en">Lightweight SIEM</span><span class="lang-th">ระบบ SIEM ขนาดเบา</span></p>
           <ul>
-            <li>Collects Windows Event logs (4688, 4624, 4625, 4720) across hosts with a custom Python agent and simulated threats.</li>
-            <li>10 MITRE ATT&amp;CK-mapped Sigma rules with brute-force correlation — cut 35 false positives/hr with no missed true positives.</li>
-            <li>Analyst triage with entity pivoting and ±10-min timelines, API-key auth, 225 automated tests.</li>
+            <li class="lang-en">Collects Windows Event logs (4688, 4624, 4625, 4720) across hosts with a custom Python agent and simulated threats.</li>
+            <li class="lang-th">เก็บ Windows Event log (4688, 4624, 4625, 4720) จากหลายเครื่องด้วย Python agent ที่เขียนเอง พร้อมจำลองภัยคุกคาม</li>
+            <li class="lang-en">10 MITRE ATT&amp;CK-mapped Sigma rules with brute-force correlation - cut 35 false positives/hr with no missed true positives.</li>
+            <li class="lang-th">Sigma rule 10 ข้อที่แมปกับ MITRE ATT&amp;CK พร้อม correlation สำหรับ brute-force - ลด false positive ได้ 35 ครั้ง/ชม. โดยไม่พลาด true positive</li>
+            <li class="lang-en">Analyst triage with entity pivoting and ±10-min timelines, API-key auth, 225 automated tests.</li>
+            <li class="lang-th">ระบบคัดกรองสำหรับนักวิเคราะห์ พร้อม entity pivoting และ timeline ±10 นาที, ยืนยันตัวตนด้วย API-key, ทดสอบอัตโนมัติ 225 เคส</li>
           </ul>
           <div class="tags"><span class="tag">Python</span><span class="tag">FastAPI</span><span class="tag">SQLite</span><span class="tag">MITRE ATT&amp;CK</span><span class="tag">Sigma</span></div>
-          <!-- TODO: replace with the Sentinela repo URL -->
-          <div class="links"><a href="https://github.com/NIHKOOL" target="_blank">🔗 GitHub</a></div>
+          <div class="links"><a href="https://github.com/NIHKOOL/Sentinela" target="_blank">🔗 <span class="lang-en">Code</span><span class="lang-th">โค้ด</span></a></div>
         </article>
 
         <article class="card reveal" id="jolepopo">
           <div class="icon">⚔️</div>
           <div class="card-top">
             <h3>Jolepopo 2D Action Game</h3>
-            <span class="date">Apr – May 2025</span>
+            <span class="date">Apr - May 2025</span>
           </div>
-          <p class="meta">Team project with ppararet · Programming Methodology</p>
+          <p class="meta"><span class="lang-en">Team project with ppararet · Programming Methodology</span><span class="lang-th">โปรเจกต์กลุ่มร่วมกับ ppararet · วิชา Programming Methodology</span></p>
           <ul>
-            <li>JavaFX side-scroller with 3-character switching, 4 enemy AI types and a multi-phase boss across 5 maps.</li>
-            <li>Strict OOP design (interfaces, abstract classes, UML), custom 60 FPS loop, AABB collision and physics.</li>
-            <li>Scene navigation, upgrade tree, audio and debug overlays; shipped as an executable JAR.</li>
+            <li class="lang-en">JavaFX side-scroller with 3-character switching, 4 enemy AI types and a multi-phase boss across 5 maps.</li>
+            <li class="lang-th">เกม side-scroller บน JavaFX สลับตัวละครได้ 3 ตัว, ศัตรู AI 4 แบบ และบอสหลายเฟสใน 5 แผนที่</li>
+            <li class="lang-en">Strict OOP design (interfaces, abstract classes, UML), custom 60 FPS loop, AABB collision and physics.</li>
+            <li class="lang-th">ออกแบบด้วย OOP เคร่งครัด (interface, abstract class, UML), game loop 60 FPS, ตรวจชน AABB และระบบฟิสิกส์</li>
+            <li class="lang-en">Scene navigation, upgrade tree, audio and debug overlays; shipped as an executable JAR.</li>
+            <li class="lang-th">ระบบสลับฉาก, ต้นไม้อัปเกรด, จัดการเสียง และ debug overlay; แจกจ่ายเป็นไฟล์ JAR</li>
           </ul>
           <div class="tags"><span class="tag">Java</span><span class="tag">JavaFX</span><span class="tag">OOP</span><span class="tag">UML</span></div>
           <div class="links">
-            <a href="https://github.com/NIHKOOL/Jolepopo" target="_blank">🔗 Code</a>
-            <a href="https://youtu.be/oEIywyK6eEs?si=qFvQbNVaqXDaj-V-" target="_blank">▶ Presentation</a>
+            <a href="https://github.com/NIHKOOL/Jolepopo" target="_blank">🔗 <span class="lang-en">Code</span><span class="lang-th">โค้ด</span></a>
+            <a href="https://youtu.be/oEIywyK6eEs?si=qFvQbNVaqXDaj-V-" target="_blank">▶ <span class="lang-en">Presentation</span><span class="lang-th">นำเสนอ</span></a>
           </div>
         </article>
 
@@ -98,58 +119,81 @@
           <div class="icon">🔌</div>
           <div class="card-top">
             <h3>Socket Programming</h3>
-            <span class="date"><!-- TODO: date --></span>
+            <span class="date"></span>
           </div>
-          <p class="meta">Computer Networks</p>
-          <!-- TODO: add project description -->
-          <p>Network application built with socket programming.</p>
-          <div class="tags"><span class="tag">Networking</span><span class="tag">Sockets</span></div>
-          <div class="links"><a href="https://github.com/NIHKOOL" target="_blank">🔗 GitHub</a></div>
+          <p class="meta"><span class="lang-en">Real-time Chat App · Computer Networks</span><span class="lang-th">แอปแชตเรียลไทม์ · วิชาเครือข่ายคอมพิวเตอร์</span></p>
+          <ul>
+            <li class="lang-en">Client-server chat app with private and group messaging over WebSocket (TCP).</li>
+            <li class="lang-th">แอปแชตแบบ client-server รองรับแชตส่วนตัวและกลุ่มผ่าน WebSocket (TCP)</li>
+            <li class="lang-en">Node.js + Socket.IO server with a React/Vite browser client; automated tests per requirement.</li>
+            <li class="lang-th">เซิร์ฟเวอร์ Node.js + Socket.IO พร้อมไคลเอนต์ React/Vite และชุดทดสอบอัตโนมัติแยกตามข้อกำหนด</li>
+            <li class="lang-en">Extras: AI chatbot, Discord bridge, file sharing and in-chat mini-games.</li>
+            <li class="lang-th">ฟีเจอร์เสริม: แชตบอต AI, เชื่อมต่อ Discord, ส่งไฟล์ และมินิเกมในแชต</li>
+          </ul>
+          <div class="tags"><span class="tag">Node.js</span><span class="tag">Socket.IO</span><span class="tag">React</span><span class="tag">WebSocket</span></div>
+          <div class="links"><a href="https://github.com/NIHKOOL/Socket-Programming-Project" target="_blank">🔗 <span class="lang-en">Code</span><span class="lang-th">โค้ด</span></a></div>
         </article>
 
       </div>
     </section>
 
     <section data-group="side">
-      <h2 class="section-title">Side Projects</h2>
+      <h2 class="section-title"><span class="lang-en">Side Projects</span><span class="lang-th">โปรเจกต์เสริม</span></h2>
       <div class="grid">
 
         <article class="card reveal" id="nice-knight">
           <div class="icon">🗡️</div>
           <h3>NICE-KNIGHT</h3>
-          <p class="meta">Mini 2D Python Game</p>
-          <p>Action game with a controllable character and score system, built with pygame.</p>
+          <p class="meta"><span class="lang-en">Mini 2D Python Game</span><span class="lang-th">เกม 2D ขนาดเล็กด้วย Python</span></p>
+          <p>
+            <span class="lang-en">Action game with a controllable character and score system, built with pygame.</span>
+            <span class="lang-th">เกมแอ็กชันที่ควบคุมตัวละครได้ พร้อมระบบคะแนน สร้างด้วย pygame</span>
+          </p>
           <div class="tags"><span class="tag">Python</span><span class="tag">pygame</span></div>
-          <div class="links"><a href="https://github.com/NIHKOOL/NICE-KNIGHT" target="_blank">🔗 Code</a></div>
+          <div class="links"><a href="https://github.com/NIHKOOL/NICE-KNIGHT" target="_blank">🔗 <span class="lang-en">Code</span><span class="lang-th">โค้ด</span></a></div>
         </article>
 
         <article class="card reveal" id="datedeck">
           <div class="icon">💡</div>
           <h3>DateDeck</h3>
-          <p class="meta">Thinc. 10 Days Project · UX/UI</p>
-          <p>A card-based dating app concept that predicts your destiny using mathematical solutions.</p>
+          <p class="meta"><span class="lang-en">Thinc. 10 Days Project · UX/UI</span><span class="lang-th">โปรเจกต์ Thinc. 10 วัน · UX/UI</span></p>
+          <p>
+            <span class="lang-en">A card-based dating app concept that predicts your destiny using mathematical solutions.</span>
+            <span class="lang-th">คอนเซปต์แอปหาคู่แบบการ์ด ที่ทำนายชะตาด้วยสูตรคณิตศาสตร์</span>
+          </p>
           <div class="tags"><span class="tag">UX/UI</span><span class="tag">Figma</span></div>
           <div class="links">
             <a href="https://www.figma.com/design/FRunFDWanLf1aC9BhrR9Vx/10_DAY_PG?node-id=0-1&amp;t=6bzCYbvGDAJPEslu-1" target="_blank">🔗 Figma</a>
-            <a href="https://www.canva.com/design/DAGh5MFsft0/31cRJCzz3CAbhAzJuCZLPA/view?utm_content=DAGh5MFsft0&amp;utm_campaign=designshare&amp;utm_medium=link2&amp;utm_source=uniquelinks&amp;utlId=h1750d7910d" target="_blank">▶ Presentation</a>
+            <a href="https://www.canva.com/design/DAGh5MFsft0/31cRJCzz3CAbhAzJuCZLPA/view?utm_content=DAGh5MFsft0&amp;utm_campaign=designshare&amp;utm_medium=link2&amp;utm_source=uniquelinks&amp;utlId=h1750d7910d" target="_blank">▶ <span class="lang-en">Presentation</span><span class="lang-th">นำเสนอ</span></a>
           </div>
         </article>
 
         <article class="card reveal" id="sekicraft">
           <div class="icon">🧱</div>
           <h3>SekiCraft</h3>
-          <!-- TODO: add description, tech and links -->
-          <p>Details coming soon.</p>
-          <div class="tags"><span class="tag">Game</span></div>
+          <p class="meta"><span class="lang-en">Sekiro × Minecraft Mod</span><span class="lang-th">ม็อด Sekiro × Minecraft</span></p>
+          <p>
+            <span class="lang-en">An experimental mod to play Sekiro: Shadows Die Twice as a Minecraft player - Minecraft movement, HUD, block building and combat overlaid on Sekiro's world. A C++ DLL and a Fabric mod bridge both games through shared memory.</span>
+            <span class="lang-th">ม็อดทดลองที่ให้เล่น Sekiro: Shadows Die Twice ในมุมมองผู้เล่น Minecraft - ระบบเคลื่อนที่ HUD การวางบล็อก และการต่อสู้ของ Minecraft ซ้อนบนโลกของ Sekiro โดยใช้ DLL ภาษา C++ และ Fabric mod เชื่อมสองเกมผ่าน shared memory</span>
+          </p>
+          <div class="tags"><span class="tag">C++</span><span class="tag">Java</span><span class="tag">Fabric Mod</span><span class="tag">Modding</span></div>
+          <div class="links"><a href="https://github.com/NIHKOOL/SekiCraft" target="_blank">🔗 <span class="lang-en">Code</span><span class="lang-th">โค้ด</span></a></div>
         </article>
 
         <article class="card reveal" id="cu-ways">
           <div class="icon">🗺️</div>
           <h3>CU Ways</h3>
           <p class="meta">UX/UI · Frontend · Backend</p>
-          <!-- TODO: add description and links -->
-          <p>Details coming soon.</p>
-          <div class="tags"><span class="tag">UX/UI</span><span class="tag">Frontend</span><span class="tag">Backend</span></div>
+          <p>
+            <span class="lang-en">A marketplace platform connecting content creators with marketers for survey-based jobs - survey and job management, marketer discovery, offer comparison and hiring. Covered UX/UI design, frontend and backend.</span>
+            <span class="lang-th">แพลตฟอร์ม marketplace ที่เชื่อมครีเอเตอร์กับนักการตลาดสำหรับงานแบบสำรวจ - จัดการแบบสำรวจและงาน ค้นหานักการตลาด เปรียบเทียบข้อเสนอ และจ้างงาน ครอบคลุมทั้งออกแบบ UX/UI, frontend และ backend</span>
+          </p>
+          <div class="tags"><span class="tag">UX/UI</span><span class="tag">Next.js</span><span class="tag">TypeScript</span><span class="tag">Go</span><span class="tag">PostgreSQL</span></div>
+          <div class="links">
+            <a href="https://www.figma.com/design/XMwuViKKwBvZFBqsVP6PAx/SE-UX-UI?node-id=0-1&amp;t=x46Aa66Mgw2GTlK9-1" target="_blank">🔗 Figma</a>
+            <a href="https://github.com/Champy2005/cu-ways-frontend" target="_blank">🔗 <span class="lang-en">Frontend</span><span class="lang-th">ฟรอนต์เอนด์</span></a>
+            <a href="https://github.com/Aluminium51/cu-ways-backend" target="_blank">🔗 <span class="lang-en">Backend</span><span class="lang-th">แบ็กเอนด์</span></a>
+          </div>
         </article>
 
       </div>

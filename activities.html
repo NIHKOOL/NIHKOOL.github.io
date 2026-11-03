@@ -1,40 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Activities &amp; Leadership — Wattikon Nongnamkhao</title>
+  <title>Activities &amp; Leadership - Wattikon Nongnamkhao</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+Thai:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <script>try{document.documentElement.setAttribute('data-lang',localStorage.getItem('lang')||'en');document.documentElement.lang=localStorage.getItem('lang')||'en';}catch(e){}</script>
 </head>
 <body>
 
   <nav class="nav">
     <div class="container nav-inner">
       <a href="index.html" class="logo">NIHKOOL<span>.</span></a>
-      <button class="menu-btn" aria-label="Menu"><span></span><span></span><span></span></button>
-      <ul class="nav-links">
-        <li><a href="index.html">Resume</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="certificates.html">Certificates</a></li>
-        <li><a href="activities.html">Activities</a></li>
-      </ul>
+      <div class="nav-actions">
+        <ul class="nav-links">
+          <li><a href="index.html"><span class="lang-en">Resume</span><span class="lang-th">เรซูเม่</span></a></li>
+          <li><a href="projects.html"><span class="lang-en">Projects</span><span class="lang-th">ผลงาน</span></a></li>
+          <li><a href="certificates.html"><span class="lang-en">Certificates</span><span class="lang-th">ใบรับรอง</span></a></li>
+          <li><a href="activities.html"><span class="lang-en">Activities</span><span class="lang-th">กิจกรรม</span></a></li>
+        </ul>
+        <button class="lang-btn" aria-label="Switch language"><span class="lang-en">ไทย</span><span class="lang-th">EN</span></button>
+        <button class="menu-btn" aria-label="Menu"><span></span><span></span><span></span></button>
+      </div>
     </div>
   </nav>
 
   <main class="container">
 
     <header class="page-head">
-      <h1>Activities &amp; Leadership</h1>
-      <p>Music, staff teams and events — the things I do outside the classroom.</p>
+      <h1><span class="lang-en">Activities &amp; Leadership</span><span class="lang-th">กิจกรรมและภาวะผู้นำ</span></h1>
+      <p>
+        <span class="lang-en">Music, staff teams and events - the things I do outside the classroom.</span>
+        <span class="lang-th">ดนตรี ทีมสตาฟ และงานอีเวนต์ - สิ่งที่ผมทำนอกห้องเรียน</span>
+      </p>
+      <div class="counts">
+        <span class="count"><b>9</b> <span class="lang-en">Activities</span><span class="lang-th">กิจกรรม</span></span>
+        <span class="count"><b>3</b> <span class="lang-en">Music</span><span class="lang-th">ดนตรี</span></span>
+        <span class="count"><b>6</b> <span class="lang-en">Staff &amp; events</span><span class="lang-th">สตาฟและอีเวนต์</span></span>
+      </div>
     </header>
 
     <div class="tabs">
-      <button class="active" data-filter="all">All</button>
-      <button data-filter="music">Music</button>
-      <button data-filter="staff">Staff &amp; Events</button>
+      <button class="active" data-filter="all"><span class="lang-en">All</span><span class="lang-th">ทั้งหมด</span></button>
+      <button data-filter="music"><span class="lang-en">Music</span><span class="lang-th">ดนตรี</span></button>
+      <button data-filter="staff"><span class="lang-en">Staff &amp; Events</span><span class="lang-th">สตาฟและอีเวนต์</span></button>
     </div>
 
     <section>
@@ -42,55 +54,64 @@
         <li data-group="staff" class="reveal">
           <div class="card">
             <div class="row"><h3>CU Chorus Concert 2026</h3><span class="date">Jul 2026</span></div>
-            <p class="role">Ticketing Staff</p>
+            <p class="role"><span class="lang-en">Ticketing Staff</span><span class="lang-th">ทีมจำหน่ายบัตร</span></p>
+            <p><span class="lang-en">Distributed concert admission tickets.</span><span class="lang-th">แจกจ่ายบัตรเข้าชมคอนเสิร์ต</span></p>
           </div>
         </li>
         <li data-group="music" class="reveal">
           <div class="card">
             <div class="row"><h3>VidLoveVidU</h3><span class="date">Feb 2026</span></div>
-            <p class="role">Band Leader &amp; Vocalist</p>
+            <p class="role"><span class="lang-en">Band Leader &amp; Vocalist</span><span class="lang-th">หัวหน้าวง &amp; นักร้องนำ</span></p>
+            <p><span class="lang-en">Recruited band members, coordinated rehearsal schedules and venues, sang lead while playing percussion, and entertained the audience.</span><span class="lang-th">รวบรวมสมาชิกวง ประสานงานตารางซ้อมและสถานที่ ร้องนำพร้อมเล่นเครื่องเพอร์คัสชัน และสร้างความบันเทิงให้ผู้ชม</span></p>
           </div>
         </li>
         <li data-group="music" class="reveal">
           <div class="card">
             <div class="row"><h3>Show COMSAMPAN 2025</h3><span class="date">Dec 2025</span></div>
-            <p class="role">Percussionist</p>
+            <p class="role"><span class="lang-en">Percussionist</span><span class="lang-th">นักเพอร์คัสชัน</span></p>
+            <p><span class="lang-en">Coordinated rehearsals and performed cajón in the show.</span><span class="lang-th">ประสานงานตารางซ้อม และบรรเลงคาฮอง (Cajón) ในการแสดง</span></p>
           </div>
         </li>
         <li data-group="staff" class="reveal">
           <div class="card">
-            <div class="row"><h3>Modchomphu Hackathon</h3><span class="date">Oct – Nov 2025</span></div>
-            <p class="role">Welfare &amp; PR</p>
+            <div class="row"><h3>Modchomphu Hackathon</h3><span class="date">Oct - Nov 2025</span></div>
+            <p class="role"><span class="lang-en">Welfare &amp; PR</span><span class="lang-th">สวัสดิการ &amp; ประชาสัมพันธ์</span></p>
+            <p><span class="lang-en">Helped plan and run welfare logistics (water, food, waste, transport, venue and schedule), coordinated with other teams and handled on-the-spot problems; produced end-to-end promo clips - scripting, filming and editing - in collaboration with the KMUTT Faculty of Engineering Student Union.</span><span class="lang-th">ร่วมวางแผนและดูแลระบบสวัสดิการ (น้ำ อาหาร การจัดการขยะ ขนส่ง สถานที่ และเวลา) ประสานงานกับทีมอื่นพร้อมแก้ปัญหาเฉพาะหน้า อีกทั้งผลิตคลิปประชาสัมพันธ์ครบวงจร ตั้งแต่เขียนสคริปต์ ถ่ายทำ ไปจนถึงตัดต่อ โดยทำงานร่วมกับสโมสรนักศึกษาคณะวิศวกรรมศาสตร์ มจธ. (KMUTT)</span></p>
           </div>
         </li>
         <li data-group="staff" class="reveal">
           <div class="card">
             <div class="row"><h3>AIS Siam Co Play Night</h3><span class="date">Oct 2025</span></div>
-            <p class="role">Content Creator</p>
+            <p class="role"><span class="lang-en">Content Creator</span><span class="lang-th">ครีเอเตอร์คอนเทนต์</span></p>
+            <p><span class="lang-en">Produced a review and promo clip for the World Cup viewing venue (1 clip).</span><span class="lang-th">ผลิตคลิปรีวิวและประชาสัมพันธ์สถานที่รับชมฟุตบอลโลก (1 คลิป)</span></p>
           </div>
         </li>
         <li data-group="staff" class="reveal">
           <div class="card">
             <div class="row"><h3>Hello CP52</h3><span class="date">Jul 2025</span></div>
-            <p class="role">Registration Team</p>
+            <p class="role"><span class="lang-en">Registration Team</span><span class="lang-th">ทีมลงทะเบียน</span></p>
+            <p><span class="lang-en">Built the registration form, verified the attendee list, and coordinated data with other teams.</span><span class="lang-th">จัดทำแบบฟอร์มลงทะเบียน ตรวจสอบรายชื่อผู้เข้าร่วม และประสานข้อมูลกับฝ่ายอื่น</span></p>
           </div>
         </li>
         <li data-group="staff" class="reveal">
           <div class="card">
-            <div class="row"><h3>Rubpuen Baanjaew</h3><span class="date">Jun – Jul 2025</span></div>
-            <p class="role">Welfare Team</p>
+            <div class="row"><h3>Rubpuen Baanjaew</h3><span class="date">Jun - Jul 2025</span></div>
+            <p class="role"><span class="lang-en">Welfare Team</span><span class="lang-th">ทีมสวัสดิการ</span></p>
+            <p><span class="lang-en">Prepared the distribution area and handed out water, food and sponsor goods.</span><span class="lang-th">จัดเตรียมพื้นที่แจกจ่าย และดำเนินการแจกน้ำ อาหาร รวมถึงของจากผู้สนับสนุน (Sponsor)</span></p>
           </div>
         </li>
         <li data-group="staff" class="reveal">
           <div class="card">
-            <div class="row"><h3>Intania Vishnu 23rd</h3><span class="date">May – Jul 2025</span></div>
-            <p class="role">Inner Welfare Team</p>
+            <div class="row"><h3>Intania Vishnu 23rd</h3><span class="date">May - Jul 2025</span></div>
+            <p class="role"><span class="lang-en">Inner Welfare Team</span><span class="lang-th">ทีมสวัสดิการภายใน</span></p>
+            <p><span class="lang-en">Helped plan and run welfare logistics (water, food, waste, transport, venue and schedule) to serve 1,500+ attendees, coordinated with other teams and handled on-the-spot problems.</span><span class="lang-th">ร่วมวางแผนและดูแลระบบสวัสดิการ (น้ำ อาหาร การจัดการขยะ ขนส่ง สถานที่ และเวลา) เพื่อให้รองรับผู้เข้าร่วม 1500+ คน และประสานงานกับทีมอื่น พร้อมดำเนินการและแก้ปัญหาเฉพาะหน้า</span></p>
           </div>
         </li>
         <li data-group="music" class="reveal">
           <div class="card">
             <div class="row"><h3>Intania Music Club 108 Contest</h3><span class="date">Mar 2025</span></div>
-            <p class="role">Vocalist &amp; Rhythm Guitarist</p>
+            <p class="role"><span class="lang-en">Vocalist &amp; Rhythm Guitarist</span><span class="lang-th">นักร้องนำ &amp; มือกีตาร์ริทึม</span></p>
+            <p><span class="lang-en">Recruited band members, coordinated rehearsal schedules and venues, sang lead while playing guitar, and entertained the audience.</span><span class="lang-th">รวบรวมสมาชิกวง ประสานงานตารางซ้อมและสถานที่ ร้องนำพร้อมเล่นกีตาร์ และสร้างความบันเทิงให้ผู้ชม</span></p>
           </div>
         </li>
       </ol>

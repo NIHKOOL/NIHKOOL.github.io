@@ -45,4 +45,12 @@ document.querySelectorAll('.tabs').forEach(tabs => {
   });
 });
 
+// Language toggle (EN ⇄ TH), persisted
+document.querySelector('.lang-btn')?.addEventListener('click', () => {
+  const next = document.documentElement.getAttribute('data-lang') === 'th' ? 'en' : 'th';
+  document.documentElement.setAttribute('data-lang', next);
+  document.documentElement.lang = next;
+  try { localStorage.setItem('lang', next); } catch (e) {}
+});
+
 document.querySelectorAll('.year').forEach(el => (el.textContent = new Date().getFullYear()));

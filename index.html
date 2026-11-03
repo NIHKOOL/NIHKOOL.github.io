@@ -1,27 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Wattikon Nongnamkhao — Portfolio</title>
-  <meta name="description" content="Wattikon Nongnamkhao — Computer Engineering student at Chulalongkorn University. Backend, AI automation and cybersecurity.">
+  <title>Wattikon Nongnamkhao - Portfolio</title>
+  <meta name="description" content="Wattikon Nongnamkhao - Computer Engineering student at Chulalongkorn University. Backend, AI automation and cybersecurity.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+Thai:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <script>try{document.documentElement.setAttribute('data-lang',localStorage.getItem('lang')||'en');document.documentElement.lang=localStorage.getItem('lang')||'en';}catch(e){}</script>
 </head>
 <body>
 
   <nav class="nav">
     <div class="container nav-inner">
       <a href="index.html" class="logo">NIHKOOL<span>.</span></a>
-      <button class="menu-btn" aria-label="Menu"><span></span><span></span><span></span></button>
-      <ul class="nav-links">
-        <li><a href="index.html">Resume</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="certificates.html">Certificates</a></li>
-        <li><a href="activities.html">Activities</a></li>
-      </ul>
+      <div class="nav-actions">
+        <ul class="nav-links">
+          <li><a href="index.html"><span class="lang-en">Resume</span><span class="lang-th">เรซูเม่</span></a></li>
+          <li><a href="projects.html"><span class="lang-en">Projects</span><span class="lang-th">ผลงาน</span></a></li>
+          <li><a href="certificates.html"><span class="lang-en">Certificates</span><span class="lang-th">ใบรับรอง</span></a></li>
+          <li><a href="activities.html"><span class="lang-en">Activities</span><span class="lang-th">กิจกรรม</span></a></li>
+        </ul>
+        <button class="lang-btn" aria-label="Switch language"><span class="lang-en">ไทย</span><span class="lang-th">EN</span></button>
+        <button class="menu-btn" aria-label="Menu"><span></span><span></span><span></span></button>
+      </div>
     </div>
   </nav>
 
@@ -29,47 +33,57 @@
 
     <header class="hero">
       <div>
-        <span class="eyebrow">Computer Engineering @ Chulalongkorn</span>
+        <span class="eyebrow"><span class="lang-en">Computer Engineering @ Chulalongkorn</span><span class="lang-th">วิศวกรรมคอมพิวเตอร์ จุฬาฯ</span></span>
         <h1>Wattikon<br><span class="grad">Nongnamkhao</span></h1>
-        <p class="lead">Hi, I'm Lookhin. I build backend systems, AI automation and security tools — and play music when I'm not coding.</p>
+        <p class="lead">
+          <span class="lang-en">Hi, I'm Lookhin. I build backend systems, AI automation and security tools - and play music when I'm not coding.</span>
+          <span class="lang-th">สวัสดีครับ ผมลูกหิน ผมสร้างระบบ backend, ระบบ AI อัตโนมัติ และเครื่องมือด้านความปลอดภัย - และเล่นดนตรีในเวลาที่ไม่ได้เขียนโค้ด</span>
+        </p>
         <div class="hero-actions">
-          <a href="projects.html" class="btn primary">View Projects</a>
-          <a href="Wattikon%20Nongnamkhao%20-%20Resume.pdf" class="btn" target="_blank">Download Resume</a>
+          <a href="projects.html" class="btn primary"><span class="lang-en">View Projects</span><span class="lang-th">ดูผลงาน</span></a>
+          <a href="Wattikon%20Nongnamkhao%20-%20Resume.pdf" class="btn" target="_blank"><span class="lang-en">Download Resume</span><span class="lang-th">ดาวน์โหลดเรซูเม่</span></a>
         </div>
       </div>
     </header>
 
     <div class="stats reveal">
-      <a href="projects.html" class="stat"><b>8</b><span>Projects</span></a>
-      <a href="certificates.html" class="stat"><b>7</b><span>Certificates</span></a>
-      <a href="certificates.html#awards" class="stat"><b>2</b><span>Awards</span></a>
-      <a href="activities.html" class="stat"><b>9</b><span>Activities</span></a>
+      <a href="projects.html" class="stat"><b>8</b><span><span class="lang-en">Projects</span><span class="lang-th">ผลงาน</span></span></a>
+      <a href="certificates.html" class="stat"><b>7</b><span><span class="lang-en">Certificates</span><span class="lang-th">ใบรับรอง</span></span></a>
+      <a href="certificates.html#awards" class="stat"><b>2</b><span><span class="lang-en">Awards</span><span class="lang-th">รางวัล</span></span></a>
+      <a href="activities.html" class="stat"><b>9</b><span><span class="lang-en">Activities</span><span class="lang-th">กิจกรรม</span></span></a>
     </div>
 
     <section>
-      <h2 class="section-title">Education</h2>
+      <h2 class="section-title"><span class="lang-en">Education</span><span class="lang-th">การศึกษา</span></h2>
       <div class="card reveal">
         <div class="row">
-          <h3>Chulalongkorn University</h3>
-          <span class="date">Aug 2024 – May 2028</span>
+          <h3><span class="lang-en">Chulalongkorn University</span><span class="lang-th">จุฬาลงกรณ์มหาวิทยาลัย</span></h3>
+          <span class="date">Aug 2024 - May 2028</span>
         </div>
-        <p>Bachelor of Engineering in Computer Engineering · Bangkok, Thailand</p>
+        <p>
+          <span class="lang-en">Bachelor of Engineering in Computer Engineering · Bangkok, Thailand</span>
+          <span class="lang-th">วิศวกรรมศาสตรบัณฑิต สาขาวิศวกรรมคอมพิวเตอร์ · กรุงเทพฯ ประเทศไทย</span>
+        </p>
       </div>
     </section>
 
     <section>
-      <h2 class="section-title">Experience</h2>
+      <h2 class="section-title"><span class="lang-en">Experience</span><span class="lang-th">ประสบการณ์</span></h2>
       <div class="card reveal">
         <div class="row">
-          <h3>AI Chatbot Backend Developer</h3>
-          <span class="date">Jun 2026 – Aug 2026</span>
+          <h3><span class="lang-en">AI Chatbot Backend Developer</span><span class="lang-th">นักพัฒนา Backend แชตบอต AI</span></h3>
+          <span class="date">Jun 2026 - Aug 2026</span>
         </div>
         <p class="meta">Korjong AI · <a href="https://korjong.com" target="_blank" class="link-arrow">korjong.com</a></p>
         <ul>
-          <li>Architected an omni-channel automation pipeline via n8n to ingest messages across LINE, Facebook and Instagram.</li>
-          <li>Integrated AI models to classify customer intent, routing requests between automated booking and customer support.</li>
-          <li>Built event-driven services: customer registration, appointment reminders, late-arrival alerts and an AI assistant for business owners.</li>
-          <li>Engineered backend APIs for the merchant dashboard — omnichannel messaging, real-time calendar, CRM and analytics.</li>
+          <li class="lang-en">Architected an omni-channel automation pipeline via n8n to ingest messages across LINE, Facebook and Instagram.</li>
+          <li class="lang-th">ออกแบบระบบอัตโนมัติแบบ omni-channel ด้วย n8n เพื่อรับข้อความจาก LINE, Facebook และ Instagram</li>
+          <li class="lang-en">Integrated AI models to classify customer intent, routing requests between automated booking and customer support.</li>
+          <li class="lang-th">ผสานโมเดล AI เพื่อจำแนกความต้องการของลูกค้า และส่งต่อคำขอระหว่างระบบจองอัตโนมัติกับฝ่ายบริการลูกค้า</li>
+          <li class="lang-en">Built event-driven services: customer registration, appointment reminders, late-arrival alerts and an AI assistant for business owners.</li>
+          <li class="lang-th">พัฒนาบริการแบบ event-driven: ลงทะเบียนลูกค้า แจ้งเตือนนัดหมาย แจ้งเตือนมาสาย และผู้ช่วย AI สำหรับเจ้าของธุรกิจ</li>
+          <li class="lang-en">Engineered backend APIs for the merchant dashboard - omnichannel messaging, real-time calendar, CRM and analytics.</li>
+          <li class="lang-th">พัฒนา backend API สำหรับแดชบอร์ดร้านค้า - ข้อความ omnichannel, ปฏิทินเรียลไทม์, CRM และการวิเคราะห์ข้อมูล</li>
         </ul>
         <div class="tags">
           <span class="tag">n8n</span><span class="tag">AI / LLM</span><span class="tag">Backend API</span><span class="tag">Automation</span>
@@ -78,53 +92,62 @@
     </section>
 
     <section>
-      <h2 class="section-title">Featured Projects</h2>
+      <h2 class="section-title"><span class="lang-en">Featured Projects</span><span class="lang-th">ผลงานเด่น</span></h2>
       <div class="grid">
         <a href="projects.html#sentinela" class="card reveal">
           <div class="icon">🛡️</div>
           <h3>Sentinela SOC Simulator</h3>
-          <p>Lightweight SIEM with MITRE ATT&amp;CK-mapped Sigma rules and analyst triage.</p>
+          <p>
+            <span class="lang-en">Lightweight SIEM with MITRE ATT&amp;CK-mapped Sigma rules and analyst triage.</span>
+            <span class="lang-th">ระบบ SIEM ขนาดเบา พร้อม Sigma rule ที่แมปกับ MITRE ATT&amp;CK และระบบคัดกรองสำหรับนักวิเคราะห์</span>
+          </p>
           <div class="tags"><span class="tag">Python</span><span class="tag">FastAPI</span><span class="tag">SQLite</span></div>
         </a>
         <a href="projects.html#korjong" class="card reveal">
           <div class="icon">🤖</div>
           <h3>Korjong AI</h3>
-          <p>Omni-channel AI chatbot and booking automation for businesses.</p>
+          <p>
+            <span class="lang-en">Omni-channel AI chatbot and booking automation for businesses.</span>
+            <span class="lang-th">แชตบอต AI แบบ omni-channel และระบบจองอัตโนมัติสำหรับธุรกิจ</span>
+          </p>
           <div class="tags"><span class="tag">n8n</span><span class="tag">AI</span><span class="tag">Backend</span></div>
         </a>
         <a href="projects.html#jolepopo" class="card reveal">
           <div class="icon">⚔️</div>
           <h3>Jolepopo 2D Action Game</h3>
-          <p>JavaFX side-scroller with character switching, enemy AI and a boss fight.</p>
+          <p>
+            <span class="lang-en">JavaFX side-scroller with character switching, enemy AI and a boss fight.</span>
+            <span class="lang-th">เกม side-scroller บน JavaFX ที่สลับตัวละครได้ มี AI ศัตรู และบอสไฟต์</span>
+          </p>
           <div class="tags"><span class="tag">Java</span><span class="tag">JavaFX</span><span class="tag">OOP</span></div>
         </a>
       </div>
-      <div class="section-foot"><a href="projects.html" class="link-arrow">See all projects</a></div>
+      <div class="section-foot"><a href="projects.html" class="link-arrow"><span class="lang-en">See all projects</span><span class="lang-th">ดูผลงานทั้งหมด</span></a></div>
     </section>
 
     <section>
-      <h2 class="section-title">Technical Skills</h2>
+      <h2 class="section-title"><span class="lang-en">Technical Skills</span><span class="lang-th">ทักษะ</span></h2>
       <div class="card skills reveal">
         <div class="skill-group">
-          <h4>Languages</h4>
+          <h4><span class="lang-en">Languages</span><span class="lang-th">ภาษาโปรแกรม</span></h4>
           <div class="tags">
             <span class="tag">Python</span><span class="tag">C/C++</span><span class="tag">Java</span><span class="tag">Go</span><span class="tag">JavaScript</span><span class="tag">SQL (PostgreSQL)</span><span class="tag">NoSQL (MongoDB)</span><span class="tag">HTML/CSS</span><span class="tag">YARA</span><span class="tag">Sigma</span>
           </div>
         </div>
         <div class="skill-group">
-          <h4>Frameworks &amp; Libraries</h4>
+          <h4><span class="lang-en">Frameworks &amp; Libraries</span><span class="lang-th">เฟรมเวิร์กและไลบรารี</span></h4>
           <div class="tags">
             <span class="tag">FastAPI</span><span class="tag">Node.js</span><span class="tag">Next.js</span><span class="tag">JavaFX</span><span class="tag">Loki Scanner</span>
           </div>
         </div>
         <div class="skill-group">
-          <h4>Developer Tools</h4>
+          <h4><span class="lang-en">Developer Tools</span><span class="lang-th">เครื่องมือ</span></h4>
           <div class="tags">
             <span class="tag">Git</span><span class="tag">GitHub Actions</span><span class="tag">Docker</span><span class="tag">Linux</span><span class="tag">Wireshark</span><span class="tag">VS Code</span><span class="tag">Supabase</span><span class="tag">n8n</span><span class="tag">Claude CLI</span>
           </div>
         </div>
         <div class="skill-group">
-          <h4>Concepts</h4>
+          <h4><span class="lang-en">Concepts</span><span class="lang-th">แนวคิดและหลักการ</span></h4>
           <div class="tags">
             <span class="tag">Database Systems</span><span class="tag">Operating Systems</span><span class="tag">Computer Networks</span><span class="tag">Software Engineering</span><span class="tag">Quantum Computing</span>
           </div>
